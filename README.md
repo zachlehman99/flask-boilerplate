@@ -9,7 +9,8 @@
             'coverage',
             ]
       },
-5. virtual environment set it up
+5. virtual environment set it up.
+    -> python3 -m venv venv
 6. then source it...run in...use which python to check if the venv will work
 7. pip install -e .
 8. which flask....tells you where flask is
