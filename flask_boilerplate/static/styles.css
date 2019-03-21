@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: cyan;
+  font-size: 18px;
+}
+
+body {
+  margin: 0;
+  color: #434383;
+}
+
+a {
+  border-bottom: 1px dotted blue;
+  color: blue;
+  text-decoration: none;
+}
+
+button {
+  color: #646424
+}
+
+li.selected {
+  color: pink;
+}
+
+li.selected:after {
+  color: pink;
+  content: '^';
+}
+
+label {
+  display: block;
+  margin-left: 20px;
+}

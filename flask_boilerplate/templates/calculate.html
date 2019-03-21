@@ -1,0 +1,43 @@
+{% extends "layouts/base.html" %}
+
+{% block title %}Calculate{% endblock %}
+
+{% block content %}
+<p>Calculate</p>
+
+<form method="post">
+  <label>
+    X:
+    <input type="number" name="x" value="{{ x }}" id="x">
+  </label>
+
+  <label>
+    Y:
+    <input type="number" name="y" value="{{ y }}" id="y">
+  </label>
+
+  <label>
+    Add:
+    <input type="radio" name="action" value="Add" id="add" checked>
+  </label>
+  <label>
+    Sub:
+    <input type="radio" name="action" value="Subtract" id="subtract">
+  </label>
+  <label>
+    Mult:
+    <input type="radio" name="action" value="Multiply" id="multiply">
+  </label>
+  <label>
+    Div:
+    <input type="radio" name="action" value="Divide" id="divide">
+  </label>
+
+    <input type="submit" name="" value="C" id="">
+</form>
+
+{% if result is not none %}
+<p class="result">The answer is: {{ result }}</p>
+{% endif %}
+
+{% endblock %}
